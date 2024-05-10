@@ -3,3 +3,15 @@ services:
     build: .
     ports:
       - "8000:8000"
+    volumes:
+      - ./startDemoProJ:/app/startDemoProJ
+    #   - ./startDemoProJ/settings.py:/app/startDemoProJ/settings.py
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+    volumes:
+      - pgdata:/var/lib/postgresql/data 
+volumes:
+  pgdata:
