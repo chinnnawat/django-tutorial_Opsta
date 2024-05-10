@@ -4,8 +4,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./startDemoProJ:/app/startDemoProJ
-    #   - ./startDemoProJ/settings.py:/app/startDemoProJ/settings.py
+      - ./startDemoProJ:/app
   db:
     image: postgres
     restart: always
