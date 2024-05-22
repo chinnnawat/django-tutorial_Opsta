@@ -75,6 +75,6 @@ class QuestionIndexViewTests(TestCase):
             # ไม่สนใจลำดับของข้อมูลที่อยู่ในลิสต์
             ordered=False,
 
-            # เปรียบเทียบข้อมูลในลิสต์แล้วแปลงให้อยู่ในรูปแบบของ Counter
+            # เปรียบเทียบข้อมูลในลิสต์
             transform=lambda x: x 
         )
